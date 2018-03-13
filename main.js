@@ -11,18 +11,16 @@ io.parseFile();
 
 rides.sortByStart();
 
-do {
-  for(vehicle of vehicles.getVehicles()) {
-    if(!vehicle.full) {
-      let bestRide = vehicle.searchBestRide(vehicle);
-      if(bestRide === null) {
-        vehicle.setFull();
-      } else {
-        vehicle.assignRide(bestRide);
-      }
+for(vehicle of vehicles.getVehicles()) {
+  do {
+    let bestRide = vehicle.searchBestRide(vehicle);
+    if(bestRide === null) {
+      vehicle.setFull();
+    } else {
+      vehicle.assignRide(bestRide);
     }
-  }
-} while (vehicles.availableVehicles > 0 && rides.unassignedRides > 0);
+  } while (!vehicle.full && vehicles.availableVehicles > 0 && rides.unassignedRides > 0);
+}
 
 for(let t = 0; t < settings.T; t++) {
   vehicles.getVehicles().forEach(vehicle => vehicle.checkPosition());
