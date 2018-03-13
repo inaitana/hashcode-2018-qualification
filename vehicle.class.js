@@ -40,7 +40,7 @@ class Vehicle {
       if(ride != null && ride.vehicle === null) {
         let startTime = this.computeStartTime(ride);
   
-        if(ride.finish >= startTime + ride.length) {
+        if(Math.min(ride.finish, settings.T - 1) >= startTime + ride.length) {
           if(bestTime === null || startTime < bestTime) {
             bestTime = startTime;
             bestRide = ride;

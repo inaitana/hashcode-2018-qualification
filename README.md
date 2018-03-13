@@ -5,9 +5,9 @@ Unfortunately, being it our first experience, we took some bad choices, and when
 Our solution in the regular qualification round only came in 737th place.
 
 The *master* branch of this repo is a debugged and simplified version of our original solution.
-If submitted during the regular round, this solution would have scored **49.282.791** points and put us in the **53rd** position of the global scoreboard (and 1st in Italy).
+If submitted during the regular round, this solution would have scored **49.288.754** points and put us in the **52rd** position of the global scoreboard (and 1st in Italy).
 
-The *optimized_c* branch implements a small optimization for the C scenery, which would have granted us an extra 18.155 points, for a new total of **49.300.946** and an hypotethical **41st** place in the global scoreboard.
+The *optimized_c* branch implements a small optimization for the C scenery, which would have granted us an extra 17.789 points, for a new total of **49.306.543** and an hypotethical **38th** place in the global scoreboard.
 
 
 ## Usage
