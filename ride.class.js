@@ -17,17 +17,12 @@ class Ride {
     this.vehicle = null;
     this.started = false;
     this.finished = false;
-    this.completion = null;
     this.bonus = false;
   }
 
   assignVehicle(vehicle) {
     this.vehicle = vehicle;
     rides.unassignedRides--;
-  }
-
-  setCompletion(time) {
-    this.completion = time;
   }
 
   startRide() {
