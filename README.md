@@ -9,6 +9,7 @@ If submitted during the regular round, this solution would have scored **49.288.
 
 The *optimized_c* branch implements a small optimization for the C scenario, which would have granted us an extra 17.789 points, for a new total of **49.306.543** and an hypotethical **38th** place in the global scoreboard.
 
+For further details about our #HashCode experience, you can check my Facebook post here: https://www.facebook.com/ing.ivan.naitana/posts/1608756422548988
 
 ## Usage
 This version of the code is written in node.js, and the most complex scenario (E) takes 2.5 seconds to complete.
